@@ -1,16 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Shaan
-  Date: 11/25/2024
-  Time: 7:30 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<div class = "menu_container">
+    <ul>
+        <%-- Always use context path in conditions as it is perfect --%>
+        <li><a href="<%= application.getContextPath()%>/index.jsp">Home</a></li>
+        <li><a href="<%= application.getContextPath()%>/about.jsp">About</a></li>
+        <li><a href="<%= application.getContextPath()%>/contact.jsp">Contact</a></li>
+    </ul>
+</div>
