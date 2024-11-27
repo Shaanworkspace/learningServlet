@@ -20,9 +20,9 @@ public class servlet2 extends HttpServlet {
         Cookie[] cookies = req.getCookies();
         resp.setContentType("text/html");
         PrintWriter writerObject = resp.getWriter();
-
+        var flag = false;
         for (Cookie cookie : cookies) {
-            if(cookie.getName().equals("ShaanYadav")) {
+            if(cookie.getName().equals("Shaan Yadav")) {
                 System.out.println(cookie.getValue());
                 writerObject.println("""
                         <h1>Welcome to learning how to print to html</h1>
@@ -34,8 +34,14 @@ public class servlet2 extends HttpServlet {
                 writerObject.println("""
                         <h2>Welcome %s to learning how to print to html</h2>
                         """.formatted(cookie.getValue()));
+                flag = true;
+
             }
         }
-
+        if(!flag) {
+            writerObject.println("""
+                    <h1>No cookie</h1>
+                    """);
+        }
     }
 }

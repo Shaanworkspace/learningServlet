@@ -24,4 +24,5 @@
         <url-pattern>/servlet2</url-pattern>
     </servlet-mapping>
     <!-- End mapping -->
+
 </web-app>

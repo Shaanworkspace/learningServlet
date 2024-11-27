@@ -15,7 +15,7 @@
         <form action="servlet1" method="GET">
             <button type="submit">Go to Servlet 1 </button>
         </form>
-        <form action="../SessionManagement/servlet2" method="GET">
+        <form action="servlet2" method="GET">
             <button type="submit">Go to Servlet 2 </button>
         </form>
         <form action="servletAdvance" method="Post">
